@@ -1,0 +1,15 @@
+<h1>Listas</h1>
+
+<% if @lists.any? %>
+  <ul>
+    <% @lists.each do |list| %>
+      <li>
+        <%= link_to list.name, list_path(list) %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No hay listas disponibles.</p>
+<% end %>
+
+<%= link_to 'Nueva Lista', new_list_path %>

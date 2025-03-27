@@ -1,0 +1,9 @@
+<h1>Nueva Lista</h1>
+
+<%= simple_form_for(@list, url: lists_path) do |f| %>
+  <%= f.input :name, label: "Nombre" %>
+
+  <%= f.button :submit, "Crear Lista" %>
+<% end %>
+
+<%= link_to 'Volver a Listas', lists_path %>
