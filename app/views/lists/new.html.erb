@@ -1,6 +1,6 @@
 <h1>New list</h1>
 
-<%= simple_form_for(@list, url: lists_path) do |f| %>
+<%= simple_form_for(@list, url: root_path) do |f| %>
   <%= f.input :name, label: "Nombre" %>
 
   <%= f.button :submit, class: "btn btn-success" do %>
@@ -8,6 +8,6 @@
   <% end %>
 <% end %>
 
-<%= link_to lists_path, class: 'btn btn-secondary mt-3' do %>
+<%= link_to root_path, class: 'btn btn-secondary mt-3' do %>
   <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to lists
 <% end %>
