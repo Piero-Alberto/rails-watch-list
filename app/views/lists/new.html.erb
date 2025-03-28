@@ -1,9 +1,13 @@
-<h1>Nueva Lista</h1>
+<h1>New list</h1>
 
 <%= simple_form_for(@list, url: lists_path) do |f| %>
   <%= f.input :name, label: "Nombre" %>
 
-  <%= f.button :submit, "Crear Lista" %>
+  <%= f.button :submit, class: "btn btn-success" do %>
+    <i class="fas fa-list" aria-hidden="true"></i> Crear Lista
+  <% end %>
 <% end %>
 
-<%= link_to 'Volver a Listas', lists_path %>
+<%= link_to lists_path, class: 'btn btn-secondary mt-3' do %>
+  <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to lists
+<% end %>
