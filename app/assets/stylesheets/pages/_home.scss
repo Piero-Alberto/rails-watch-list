@@ -1,1 +1,43 @@
 // Specific CSS for your home-page
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-list {
+   background-image: url('https://res.cloudinary.com/dotxujkmk/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1743289718/pexels-tima-miroshnichenko-7991273_ychcy5.jpg'); /* Reemplaza URL_DE_TU_IMAGEN */
+  background-size: cover; /* Ajusta la imagen al tamaño de la tarjeta */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  border: 1px solidrgb(190, 190, 190); /* Borde sutil */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 45px; /* Espacio interno */
+  margin: 10px; /* Espacio entre tarjetas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  transition: transform 0.3s ease; /* Transición suave */
+  text-align: center; /* Centrar el texto */
+  min-width: 200px; /* Ancho mínimo */
+  flex-grow: 1; /* Permite que las tarjetas crezcan */
+
+}
+
+.card-list a {
+  text-decoration: none; /* Eliminar subrayado del enlace */
+  color: #ffffff; /* Color del texto */
+  font-weight: bold; /* Texto en negrita */
+}
